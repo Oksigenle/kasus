@@ -6,7 +6,7 @@
             @foreach($siswa as $datas)
             <form action="{{ route('siswa.update', $datas->id) }}" method="post">
                 {{ csrf_field() }}
-                {{ method_field('PUT') }}
+                {{ method_field('POST') }}
                 <div class="form-group">
                     <label for="nama">Nama:</label>
                     <input type="text" class="form-control" id="usr" name="nama" value="{{ $datas->nama }}">
